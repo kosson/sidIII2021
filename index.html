@@ -1,9 +1,114 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <style>
+        nav {
+          border-bottom: 1px solid black;
+        }
+        .nav_elem {
+          display: inline-block;
+          list-style: none;
+          background-color: aqua;
+          padding: 0 1rem;
+        }
+        .nav_elem a {
+          text-decoration:none;
+        }
+        header.page-header {
+          background: no-repeat left/cover url(img/florian-olivo-JNz9bQD3Oio-unsplash.jpg);
+          /* Creator Florian Olivio - https://unsplash.com/photos/JNz9bQD3Oio */
+          display: flex;
+          height: 120px;
+          min-width: 120px;
+          align-items: center;
+          color: #fff;
+          text-shadow: #000 0 0 .2em;
+        }
 
+        header.page-header > h1 {
+            font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive, fantasy;
+            margin: 2%;
+        }
+
+        h1 {
+            font-size: 1.93rem;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.16rem;
+            margin-top: 0;
+        }
+
+        hgroup {
+          text-align: right;
+          font-family: Verdana, sans-serif;
+          padding-right: 16px;
+          border-right: 10px solid #00c8d7;
+        }
+        aside {
+          width: 40%;
+          padding-left: .5rem;
+          margin-left: .5rem;
+          float: right;
+          box-shadow: inset 5px 0 5px -5px #29627e;
+          font-style: italic;
+          color: #29627e;
+        }
+        aside > p {
+            margin: .5rem;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            background-color: #45a1ff;
+            color: #fff;
+        }
+      </style>
     </head>
     <body>
-        
+        <nav class="meniu">
+          <ul>
+            <li class="nav_elem"><a href="#">Acasă</a></li>
+            <li class="nav_elem"><a href="#">Despre mine</a></li>
+            <li class="nav_elem"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <main class="content">
+          <header class="page-header">
+            <h1>O introducere în programarea web</h1>
+          </header>
+          <section>
+            <hgroup>
+              <h1>Tehnologii pentru redactarea documentelor web</h1>
+              <h2>Introducere</h2>
+            </hgroup>
+            <p>
+              La începutul secolului 20 al mileniului trecut, matematicianul Gottlob Frege a căutat „un limbaj al gândului pur”, care să poată fi folosit pentru a prezenta demonstrațiile matematice fără a se apela în vreun fel la mecanismele intuiției, ci doar cele ale logicii. Ceea ce căuta Gottlob Frege era o sintaxă care să fie precisă ea în sine pe care să o poți folosi fără a o interpreta.
+              De fapt, acesta a fost pasul către realizarea visului lui Gottfried Leibniz de a găsi un set de reguli stricte pentru procesarea simbolurilor, ceea ce el numea „limbajul gândurilor” ca reducere a ideilor la un set de concepte nucleu, care prin combinare, să ofere expresivitatea tuturor ideilor indiferent de complexitatea lor.
+            </p>
+            <p>
+              Pentru asta Leibnitz ar fi avut nevoie de o anumită algebră cu ajutorul căreia să poată reduce orice propoziție la o valoare de adevăr. Contribuțiile sale în algebra logicii sub forma operatorilor logici au fost completate un secol mai târziu de Gottlob Frege.
+            </p>
+            <aside>
+              <figure>
+                <img src="img/Young_frege.jpg" alt="Gottlob Frege în tinerețe" height="180px">
+                <figcaption>
+                  Gottlob Frege, 8 Noiembrie, 1848 – 26 Iulie, 1925
+                </figcaption>
+              </figure>
+            </aside>
+            <p>
+              George Boole este figura care dezvoltă un set limitat al legilor gândului, în fapt o aritmetică, care să permită reducerea expresiilor, fie la adevărat, fie la fals. Cu introducerea operațiunilor logice and, notat cu ∧, în română ȘI, or, notat cu ∨, în română SAU și NOT, notat cu ¬, se poate vorbi despre algebra Booleană ca fundament al domeniului computației moderne. Gottlob Frege face un pas înainte și în căutările sale pentru a descoperi un limbaj formal artificial cu o sintaxă care să nu necesite interpretare, va completa în mod fericit algebra booleană introducând cuantificatori noi precum ∀ însemnând oricare sau cu sensul de tot sau ∃ însemnând fie, există, pentru o parte. Deodată cu aceste cunoștințe acumulate, domeniul matematicii era pe drumul de a formaliza un limbaj exact de care avea nevoie pentru a algoritmiza demonstrațiile și astfel logica matematică a căpătat noile mijloace de expresie. Am menționat deja termenul de algoritm. Un algoritm (combinația dintre latinul algorismus în onoarea matematicianului persan Muḥammad ibn Mūsā al-Khwārizmī și grecescul arithmos, care înseamnă număr) este o metodă care urmărește o rezolvare pas cu pas a unei probleme. Un exemplu antic de algoritm este metoda lui Euclid de a calcula cel mai mare divizor comun. Mai târziu, mult mai târziu, în 1936, matematicianul Alan Mathison Turing propune o mașină de calcul automată, care propunea stocarea algoritmilor ca programe, iar în 1937, Claude E. Shannon aplica logica booleană pe circuitele electronice. Din acest moment evoluția domeniului computerelor a accelerat până la nivelul actual.
+            </p>
+            <p>
+              Efortul de a învăța un limbaj de programare este răsplătit prin însușirea unui set de reguli formalizat cu ajutorul căruia să poți manipula date, informații și să extinzi gândul în lumea materială dacă dorești. Câștigul este al aceluia care are la îndemână instrumentarul a cărui aplicare poate părea a fi cel mai apropiat lucru de magie.
+            </p>
+          </section>
+        </main>
+        <footer>
+          <p>Creat pentru lucru pe elementele unui document. Versiunea 0.0.1</p>
+        </footer>
     </body>
 </html>
