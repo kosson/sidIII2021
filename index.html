@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <title>Titlul paginii</title>
       <style>
         nav {
           border-bottom: 1px solid black;
@@ -18,8 +19,8 @@
           background: no-repeat left/cover url(img/florian-olivo-JNz9bQD3Oio-unsplash.jpg);
           /* Creator Florian Olivio - https://unsplash.com/photos/JNz9bQD3Oio */
           display: flex;
-          height: 120px;
-          min-width: 120px;
+          flex-direction: column;
+          justify-content: center;
           align-items: center;
           color: #fff;
           text-shadow: #000 0 0 .2em;
@@ -78,6 +79,12 @@
         <main class="content">
           <header class="page-header">
             <h1>O introducere în programarea web</h1>
+            <div>
+              <div class="rosu"><p>Ceva</p></div>
+              <div class="verde"><p>Altceva</p></div>
+              <div class="albastru"><p>Undeva</p></div>
+              <div class="mov"><p>Cândva</p></div>
+            </div>
           </header>
           <section>
             <hgroup>
@@ -85,7 +92,7 @@
               <h2>Introducere</h2>
             </hgroup>
             <p>
-              La începutul secolului 20 al mileniului trecut, matematicianul Gottlob Frege a căutat „un limbaj al gândului pur”, care să poată fi folosit pentru a prezenta demonstrațiile matematice fără a se apela în vreun fel la mecanismele intuiției, ci doar cele ale logicii. Ceea ce căuta Gottlob Frege era o sintaxă care să fie precisă ea în sine pe care să o poți folosi fără a o interpreta.
+              La începutul secolului 20 al mileniului trecut, matematicianul <em>Gottlob Frege</em> a căutat „un limbaj al gândului pur”, care să poată fi folosit pentru a prezenta demonstrațiile matematice fără a se apela în vreun fel la mecanismele intuiției, ci doar cele ale logicii. Ceea ce căuta Gottlob Frege era o sintaxă care să fie precisă ea în sine pe care să o poți folosi fără a o interpreta.
               De fapt, acesta a fost pasul către realizarea visului lui Gottfried Leibniz de a găsi un set de reguli stricte pentru procesarea simbolurilor, ceea ce el numea „limbajul gândurilor” ca reducere a ideilor la un set de concepte nucleu, care prin combinare, să ofere expresivitatea tuturor ideilor indiferent de complexitatea lor.
             </p>
             <p>
@@ -105,6 +112,27 @@
             <p>
               Efortul de a învăța un limbaj de programare este răsplătit prin însușirea unui set de reguli formalizat cu ajutorul căruia să poți manipula date, informații și să extinzi gândul în lumea materială dacă dorești. Câștigul este al aceluia care are la îndemână instrumentarul a cărui aplicare poate părea a fi cel mai apropiat lucru de magie.
             </p>
+          </section>
+          <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Capul de tabel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Corpul tabelului</td>
+                        <td>având două coloane</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Prima celulă</td>
+                        <td>A doua din footer</td>
+                    </tr>
+                </tfoot>
+            </table>
           </section>
         </main>
         <footer>
